@@ -1,6 +1,6 @@
 # Dataset decision + licensing check
 
-Required by `PROJECT_METHODOLOGY.md` §1 before any download. Checked 2026-08-01.
+Licensing and access checked before any download, on 2026-08-01.
 
 ## Candidates
 

@@ -1,6 +1,6 @@
 """Central config + device helper for project-7-ppe-compliance.
 
-Import discipline (see skills/uv-python311-ml-env-on-mac.md):
+Import discipline (hard-won on this machine):
   - torch is NOT imported at module top level. It is lazy-imported inside get_device().
     Config modules that import torch eagerly are what turn the torch/tree-lib segfault on this
     Mac from avoidable into unavoidable.
@@ -24,7 +24,7 @@ for _d in (DATA, DATASETS, OUTPUTS, RUNS, CHECKPOINTS):
 
 # --- Experiment constants -------------------------------------------------
 # Fixed before any training run. Changing these after seeing results invalidates
-# the hypothesis test (PROJECT_METHODOLOGY.md section 4).
+# the hypothesis test - the metric and decision rule are fixed before the experiment runs.
 
 SEED = 42
 CROWDING_STRATA = [(1, 1), (2, 3), (4, 6), (7, 10**6)]  # persons per frame, inclusive

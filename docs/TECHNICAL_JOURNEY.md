@@ -238,7 +238,7 @@ segmentation answers "which pixels are this person", while PPE association needs
 *associated with* this person" — and worn equipment sits outside the first region by construction.
 Masks are the sharper tool and the task wanted the blunter one.
 
-This is a negative result, reported as a finding per `PROJECT_METHODOLOGY.md` §4. It is a more
+This is a negative result, reported as a finding rather than a failure. It is a more
 useful one than a marginal win would have been, because it is diagnosed: the containment
 distribution in §9 says precisely which assumption failed, and it generalises to any
 "associate small object to its wearer/holder" problem, not just PPE.

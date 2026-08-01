@@ -1,4 +1,4 @@
-# Python 3.11 (uv venv --python 3.11) - see skills/uv-python311-ml-env-on-mac.md
+# Python 3.11 (uv venv --python 3.11)
 # TORCH-ONLY PROCESS. Do not add xgboost / lightgbm / catboost to this file:
 # torch + tree-lib in one process segfaults on this Mac.
 

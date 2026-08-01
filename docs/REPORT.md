@@ -18,7 +18,7 @@ unprotected; the reverse merely triggers a check. The headline metric is therefo
 non-compliance recall**, with "undetermined" counted as a **miss** — "we could not tell" protects
 nobody.
 
-**Hypothesis, fixed before any training run** (`PROJECT_METHODOLOGY.md` §4):
+**Hypothesis, fixed before any training run:**
 
 > Mask-containment association yields higher per-person non-compliance recall than box-containment
 > association, and the margin **increases** with the number of persons per frame.
@@ -280,7 +280,7 @@ observed:
 3. The cause is geometric and measured: worn PPE lies outside the wearer's segmentation mask for a
    quarter of helmets.
 
-**Assumptions this inference depends on**, stated per `PROJECT_METHODOLOGY.md` §4:
+**Assumptions this inference depends on**, stated explicitly:
 
 - The derived compliance rule (head-without-helmet ⇒ non-compliant) is correct. It is the arms'
   point of disagreement, and it is an assumption.

@@ -19,12 +19,11 @@ which is precisely the mechanism this project claims matters. Same threshold, sa
 detections. The original IoU rule is retained as ARM A0 and reported, because its collapse is
 the evidence that ARM A is the honest baseline rather than a strawman we picked to lose.
 
-OWNERSHIP NOTE (CLAUDE.md section 1)
-------------------------------------
-`associate_by_mask_containment` (ARM B) is the novel mechanism and was originally left as a stub
-for Sumit. It is implemented here on his instruction to "assume whatever is necessary". It is a
-reference implementation, deliberately kept short with the decision rule explicit, so it is
-straightforward to inspect, defend, or replace with his own.
+IMPLEMENTATION NOTE
+-------------------
+`associate_by_mask_containment` (ARM B) is the mechanism under test, so it is deliberately kept
+short with its decision rule explicit rather than buried in helpers - it should be easy to
+inspect, argue with, or swap for a different formulation.
 """
 
 from __future__ import annotations

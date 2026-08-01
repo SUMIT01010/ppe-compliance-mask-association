@@ -6,9 +6,9 @@ checkpoints/
 runs/
 datasets/
 data/
-# ...and the same paths as SYMLINKS. On this machine these are symlinks into ~/ppe7-data (see
-# skills/icloud-synced-desktop-wrecks-ml-workloads.md), and a trailing-slash pattern does not
-# match a symlink - git happily commits it as a dangling link for whoever clones.
+# ...and the same paths as SYMLINKS. These are often symlinked out to a non-synced volume, and a
+# trailing-slash pattern does NOT match a symlink - git happily commits it as a dangling link for
+# whoever clones next.
 checkpoints
 runs
 datasets

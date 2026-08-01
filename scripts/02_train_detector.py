@@ -1,6 +1,6 @@
 """Train the 4-class YOLOv8 detector that BOTH arms share.
 
-Scale is a single env flag (skills/uv-python311-ml-env-on-mac.md pattern, CLOUD_RUN.md flips it):
+Scale is a single env flag (docs/CLOUD_RUN.md flips it):
 
     SCALE=demo  (default)  yolov8s @ 768, 25 epochs   - fits an afternoon on this Mac's MPS
     SCALE=full             yolov8m @ 960, 80 epochs   - what to run on a CUDA box
