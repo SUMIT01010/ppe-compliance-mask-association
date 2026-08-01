@@ -1,0 +1,395 @@
+{
+  "n_composites": 700,
+  "latency": {
+    "detect_ms_p50": 24.34404199993878,
+    "detect_ms_p95": 39.714024699878784,
+    "segment_ms_p50": 285.8741669988376,
+    "segment_ms_p95": 404.7294829995735,
+    "n_detect_calls": 700,
+    "n_segment_calls": 695
+  },
+  "arms": {
+    "A0_box_iou": {
+      "overall": {
+        "n_persons": 3029,
+        "n_noncompliant": 1981,
+        "n_matched": 2219,
+        "noncompliance_recall_strict": 0.028773346794548207,
+        "noncompliance_recall_conditioned": 0.03912148249828414,
+        "compliant_f1": 0.0019065776930409916,
+        "undetermined_rate": 0.977550346649059,
+        "verdict_accuracy": 0.01914823374050842
+      },
+      "by_crowding": {
+        "1": {
+          "n_persons": 83,
+          "n_noncompliant": 54,
+          "n_matched": 79,
+          "noncompliance_recall_strict": 0.07407407407407407,
+          "noncompliance_recall_conditioned": 0.0784313725490196,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9518072289156626,
+          "verdict_accuracy": 0.04819277108433735
+        },
+        "2-3": {
+          "n_persons": 502,
+          "n_noncompliant": 334,
+          "n_matched": 377,
+          "noncompliance_recall_strict": 0.029940119760479042,
+          "noncompliance_recall_conditioned": 0.04,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9760956175298805,
+          "verdict_accuracy": 0.0199203187250996
+        },
+        "4-6": {
+          "n_persons": 1397,
+          "n_noncompliant": 903,
+          "n_matched": 979,
+          "noncompliance_recall_strict": 0.02547065337763012,
+          "noncompliance_recall_conditioned": 0.0359375,
+          "compliant_f1": 0.00404040404040404,
+          "undetermined_rate": 0.9799570508231925,
+          "verdict_accuracy": 0.01717967072297781
+        },
+        "7+": {
+          "n_persons": 1047,
+          "n_noncompliant": 690,
+          "n_matched": 784,
+          "noncompliance_recall_strict": 0.028985507246376812,
+          "noncompliance_recall_conditioned": 0.03875968992248062,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9770773638968482,
+          "verdict_accuracy": 0.019102196752626553
+        }
+      },
+      "by_overlap": {
+        "0.00": {
+          "n_persons": 755,
+          "n_noncompliant": 488,
+          "n_matched": 691,
+          "noncompliance_recall_strict": 0.030737704918032786,
+          "noncompliance_recall_conditioned": 0.03333333333333333,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9801324503311258,
+          "verdict_accuracy": 0.019867549668874173
+        },
+        "0.15": {
+          "n_persons": 583,
+          "n_noncompliant": 391,
+          "n_matched": 472,
+          "noncompliance_recall_strict": 0.04092071611253197,
+          "noncompliance_recall_conditioned": 0.049689440993788817,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9656946826758147,
+          "verdict_accuracy": 0.0274442538593482
+        },
+        "0.30": {
+          "n_persons": 694,
+          "n_noncompliant": 461,
+          "n_matched": 475,
+          "noncompliance_recall_strict": 0.028199566160520606,
+          "noncompliance_recall_conditioned": 0.042071197411003236,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9769452449567724,
+          "verdict_accuracy": 0.018731988472622477
+        },
+        "0.45": {
+          "n_persons": 473,
+          "n_noncompliant": 308,
+          "n_matched": 294,
+          "noncompliance_recall_strict": 0.025974025974025976,
+          "noncompliance_recall_conditioned": 0.042328042328042326,
+          "compliant_f1": 0.012048192771084336,
+          "undetermined_rate": 0.9788583509513742,
+          "verdict_accuracy": 0.019027484143763214
+        },
+        "0.60": {
+          "n_persons": 524,
+          "n_noncompliant": 333,
+          "n_matched": 287,
+          "noncompliance_recall_strict": 0.015015015015015015,
+          "noncompliance_recall_conditioned": 0.026737967914438502,
+          "compliant_f1": 0.0,
+          "undetermined_rate": 0.9866412213740458,
+          "verdict_accuracy": 0.009541984732824428
+        }
+      },
+      "helmet_association_accuracy": 0.001402524544179523,
+      "helmet_association_n": 713
+    },
+    "A_box_containment": {
+      "overall": {
+        "n_persons": 3029,
+        "n_noncompliant": 1981,
+        "n_matched": 2219,
+        "noncompliance_recall_strict": 0.6224129227662797,
+        "noncompliance_recall_conditioned": 0.8462594371997255,
+        "compliant_f1": 0.6718100890207716,
+        "undetermined_rate": 0.3370749422251568,
+        "verdict_accuracy": 0.5939253879168043
+      },
+      "by_crowding": {
+        "1": {
+          "n_persons": 83,
+          "n_noncompliant": 54,
+          "n_matched": 79,
+          "noncompliance_recall_strict": 0.8333333333333334,
+          "noncompliance_recall_conditioned": 0.8823529411764706,
+          "compliant_f1": 0.830188679245283,
+          "undetermined_rate": 0.12048192771084337,
+          "verdict_accuracy": 0.8072289156626506
+        },
+        "2-3": {
+          "n_persons": 502,
+          "n_noncompliant": 334,
+          "n_matched": 377,
+          "noncompliance_recall_strict": 0.6526946107784432,
+          "noncompliance_recall_conditioned": 0.872,
+          "compliant_f1": 0.7338129496402876,
+          "undetermined_rate": 0.31274900398406374,
+          "verdict_accuracy": 0.6374501992031872
+        },
+        "4-6": {
+          "n_persons": 1397,
+          "n_noncompliant": 903,
+          "n_matched": 979,
+          "noncompliance_recall_strict": 0.6090808416389811,
+          "noncompliance_recall_conditioned": 0.859375,
+          "compliant_f1": 0.6615776081424937,
+          "undetermined_rate": 0.35790980672870437,
+          "verdict_accuracy": 0.5798138869005011
+        },
+        "7+": {
+          "n_persons": 1047,
+          "n_noncompliant": 690,
+          "n_matched": 784,
+          "noncompliance_recall_strict": 0.6086956521739131,
+          "noncompliance_recall_conditioned": 0.813953488372093,
+          "compliant_f1": 0.6408450704225352,
+          "undetermined_rate": 0.33810888252148996,
+          "verdict_accuracy": 0.5749761222540593
+        }
+      },
+      "by_overlap": {
+        "0.00": {
+          "n_persons": 755,
+          "n_noncompliant": 488,
+          "n_matched": 691,
+          "noncompliance_recall_strict": 0.8094262295081968,
+          "noncompliance_recall_conditioned": 0.8777777777777778,
+          "compliant_f1": 0.7439824945295406,
+          "undetermined_rate": 0.15364238410596026,
+          "verdict_accuracy": 0.7483443708609272
+        },
+        "0.15": {
+          "n_persons": 583,
+          "n_noncompliant": 391,
+          "n_matched": 472,
+          "noncompliance_recall_strict": 0.7084398976982097,
+          "noncompliance_recall_conditioned": 0.860248447204969,
+          "compliant_f1": 0.7306501547987616,
+          "undetermined_rate": 0.25728987993138935,
+          "verdict_accuracy": 0.6775300171526587
+        },
+        "0.30": {
+          "n_persons": 694,
+          "n_noncompliant": 461,
+          "n_matched": 475,
+          "noncompliance_recall_strict": 0.5661605206073753,
+          "noncompliance_recall_conditioned": 0.8446601941747572,
+          "compliant_f1": 0.6467391304347826,
+          "undetermined_rate": 0.38760806916426516,
+          "verdict_accuracy": 0.547550432276657
+        },
+        "0.45": {
+          "n_persons": 473,
+          "n_noncompliant": 308,
+          "n_matched": 294,
+          "noncompliance_recall_strict": 0.4935064935064935,
+          "noncompliance_recall_conditioned": 0.8042328042328042,
+          "compliant_f1": 0.6332046332046332,
+          "undetermined_rate": 0.452431289640592,
+          "verdict_accuracy": 0.49471458773784355
+        },
+        "0.60": {
+          "n_persons": 524,
+          "n_noncompliant": 333,
+          "n_matched": 287,
+          "noncompliance_recall_strict": 0.4444444444444444,
+          "noncompliance_recall_conditioned": 0.7914438502673797,
+          "compliant_f1": 0.553956834532374,
+          "undetermined_rate": 0.5190839694656488,
+          "verdict_accuracy": 0.42938931297709926
+        }
+      },
+      "helmet_association_accuracy": 0.8555399719495091,
+      "helmet_association_n": 713
+    },
+    "B_mask_containment": {
+      "overall": {
+        "n_persons": 3029,
+        "n_noncompliant": 1981,
+        "n_matched": 2219,
+        "noncompliance_recall_strict": 0.6057546693589096,
+        "noncompliance_recall_conditioned": 0.8236101578586136,
+        "compliant_f1": 0.655421686746988,
+        "undetermined_rate": 0.3568834598877517,
+        "verdict_accuracy": 0.5757675800594255
+      },
+      "by_crowding": {
+        "1": {
+          "n_persons": 83,
+          "n_noncompliant": 54,
+          "n_matched": 79,
+          "noncompliance_recall_strict": 0.7962962962962963,
+          "noncompliance_recall_conditioned": 0.8431372549019608,
+          "compliant_f1": 0.851851851851852,
+          "undetermined_rate": 0.14457831325301204,
+          "verdict_accuracy": 0.7951807228915663
+        },
+        "2-3": {
+          "n_persons": 502,
+          "n_noncompliant": 334,
+          "n_matched": 377,
+          "noncompliance_recall_strict": 0.6377245508982036,
+          "noncompliance_recall_conditioned": 0.852,
+          "compliant_f1": 0.7246376811594204,
+          "undetermined_rate": 0.33067729083665337,
+          "verdict_accuracy": 0.6235059760956175
+        },
+        "4-6": {
+          "n_persons": 1397,
+          "n_noncompliant": 903,
+          "n_matched": 979,
+          "noncompliance_recall_strict": 0.5957918050941307,
+          "noncompliance_recall_conditioned": 0.840625,
+          "compliant_f1": 0.6397919375812744,
+          "undetermined_rate": 0.3786685755189692,
+          "verdict_accuracy": 0.5612025769506085
+        },
+        "7+": {
+          "n_persons": 1047,
+          "n_noncompliant": 690,
+          "n_matched": 784,
+          "noncompliance_recall_strict": 0.5884057971014492,
+          "noncompliance_recall_conditioned": 0.7868217054263565,
+          "compliant_f1": 0.6238859180035651,
+          "undetermined_rate": 0.35721107927411655,
+          "verdict_accuracy": 0.5549188156638013
+        }
+      },
+      "by_overlap": {
+        "0.00": {
+          "n_persons": 755,
+          "n_noncompliant": 488,
+          "n_matched": 691,
+          "noncompliance_recall_strict": 0.7909836065573771,
+          "noncompliance_recall_conditioned": 0.8577777777777778,
+          "compliant_f1": 0.7272727272727273,
+          "undetermined_rate": 0.17350993377483442,
+          "verdict_accuracy": 0.7284768211920529
+        },
+        "0.15": {
+          "n_persons": 583,
+          "n_noncompliant": 391,
+          "n_matched": 472,
+          "noncompliance_recall_strict": 0.6930946291560103,
+          "noncompliance_recall_conditioned": 0.8416149068322981,
+          "compliant_f1": 0.7129337539432177,
+          "undetermined_rate": 0.27615780445969124,
+          "verdict_accuracy": 0.6586620926243568
+        },
+        "0.30": {
+          "n_persons": 694,
+          "n_noncompliant": 461,
+          "n_matched": 475,
+          "noncompliance_recall_strict": 0.5488069414316703,
+          "noncompliance_recall_conditioned": 0.8187702265372169,
+          "compliant_f1": 0.6521739130434783,
+          "undetermined_rate": 0.39913544668587897,
+          "verdict_accuracy": 0.537463976945245
+        },
+        "0.45": {
+          "n_persons": 473,
+          "n_noncompliant": 308,
+          "n_matched": 294,
+          "noncompliance_recall_strict": 0.474025974025974,
+          "noncompliance_recall_conditioned": 0.7724867724867724,
+          "compliant_f1": 0.608695652173913,
+          "undetermined_rate": 0.47780126849894294,
+          "verdict_accuracy": 0.4714587737843552
+        },
+        "0.60": {
+          "n_persons": 524,
+          "n_noncompliant": 333,
+          "n_matched": 287,
+          "noncompliance_recall_strict": 0.43243243243243246,
+          "noncompliance_recall_conditioned": 0.7700534759358288,
+          "compliant_f1": 0.5166051660516605,
+          "undetermined_rate": 0.5458015267175572,
+          "verdict_accuracy": 0.4083969465648855
+        }
+      },
+      "helmet_association_accuracy": 0.8288920056100981,
+      "helmet_association_n": 713
+    }
+  },
+  "headline": {
+    "B_vs_A_strict": {
+      "arm_a": 0.6224129227662797,
+      "arm_b": 0.6057546693589096,
+      "delta": -0.01665825340737004,
+      "ci95_lo": -0.024427500753836626,
+      "ci95_hi": -0.00878076518776286,
+      "p_delta_gt_0": 0.0,
+      "n_boot": 2000
+    },
+    "B_vs_A_conditioned": {
+      "arm_a": 0.8462594371997255,
+      "arm_b": 0.8236101578586136,
+      "delta": -0.02264927934111194,
+      "ci95_lo": -0.03316543943691755,
+      "ci95_hi": -0.01191309282036849,
+      "p_delta_gt_0": 0.0,
+      "n_boot": 2000
+    }
+  },
+  "delta_by_crowding": {
+    "1": {
+      "arm_a": 0.8333333333333334,
+      "arm_b": 0.7962962962962963,
+      "delta": -0.03703703703703709,
+      "ci95_lo": -0.09433962264150941,
+      "ci95_hi": 0.0,
+      "p_delta_gt_0": 0.0,
+      "n_boot": 1000
+    },
+    "2-3": {
+      "arm_a": 0.6526946107784432,
+      "arm_b": 0.6377245508982036,
+      "delta": -0.014970059880239583,
+      "ci95_lo": -0.03681814198071868,
+      "ci95_hi": 0.005589377516751756,
+      "p_delta_gt_0": 0.067,
+      "n_boot": 1000
+    },
+    "4-6": {
+      "arm_a": 0.6090808416389811,
+      "arm_b": 0.5957918050941307,
+      "delta": -0.013289036544850474,
+      "ci95_lo": -0.024581453708959432,
+      "ci95_hi": -0.0022855839713308845,
+      "p_delta_gt_0": 0.006,
+      "n_boot": 1000
+    },
+    "7+": {
+      "arm_a": 0.6086956521739131,
+      "arm_b": 0.5884057971014492,
+      "delta": -0.020289855072463836,
+      "ci95_lo": -0.034937047779938134,
+      "ci95_hi": -0.0060051095871991155,
+      "p_delta_gt_0": 0.001,
+      "n_boot": 1000
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# --- The reason YOLO_SAM_BEVERAGE was 122MB. Do not relax these. ---
+*.pt
+*.pth
+*.onnx
+checkpoints/
+runs/
+datasets/
+data/
+# ...and the same paths as SYMLINKS. On this machine these are symlinks into ~/ppe7-data (see
+# skills/icloud-synced-desktop-wrecks-ml-workloads.md), and a trailing-slash pattern does not
+# match a symlink - git happily commits it as a dangling link for whoever clones.
+checkpoints
+runs
+datasets
+data
+outputs/**/*.png
+outputs/**/*.jpg
+
+# Env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Mac
+.DS_Store
+
+# Keep the shape of the tree
+!**/.gitkeep
+
+# Run logs (ultralytics progress bars; 1.4MB of carriage returns)
+logs/
+*.log

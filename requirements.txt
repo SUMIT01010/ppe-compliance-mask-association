@@ -1,0 +1,23 @@
+# Python 3.11 (uv venv --python 3.11) - see skills/uv-python311-ml-env-on-mac.md
+# TORCH-ONLY PROCESS. Do not add xgboost / lightgbm / catboost to this file:
+# torch + tree-lib in one process segfaults on this Mac.
+
+ultralytics>=8.3.0          # YOLOv8 detection + training
+torch>=2.2                  # pinned by ultralytics; float32 only on MPS
+torchvision>=0.17
+numpy>=1.26,<2.0
+opencv-python-headless>=4.9
+pillow>=10.2
+pandas>=2.2
+matplotlib>=3.8
+pyyaml>=6.0
+tqdm>=4.66
+
+# MobileSAM - lightweight SAM variant used for person instance masks
+timm>=0.9.16
+
+# Serving layer (app/main.py). python-multipart is required for the file-upload endpoint;
+# without it FastAPI raises at request time, not import time.
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
