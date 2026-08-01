@@ -21,3 +21,8 @@ timm>=0.9.16
 fastapi>=0.110
 uvicorn[standard]>=0.29
 python-multipart>=0.0.9
+
+# Book build only (scripts/05_build_book.py) - not needed to run the experiments.
+# weasyprint needs system pango/cairo: `brew install pango cairo gdk-pixbuf`
+# weasyprint>=62
+# pypdf>=4.2

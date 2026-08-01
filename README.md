@@ -283,6 +283,10 @@ evidenced here.
 
 ## Further reading
 
+- **[`docs/p7_ppe_association_book.pdf`](docs/p7_ppe_association_book.pdf)** — the technical book
+  (17 pages): full derivations, model deep-dives, every design decision with the measurement
+  behind it. Regenerate with `uv run python scripts/05_build_book.py`; every number in it is read
+  from `outputs/*.json` at build time, so it cannot drift from the results.
 - [`docs/REPORT.md`](docs/REPORT.md) — full write-up with the estimators and every design decision
 - [`docs/TECHNICAL_JOURNEY.md`](docs/TECHNICAL_JOURNEY.md) — build order, the three traps avoided,
   and the bug that would have produced a 60-point fake win
